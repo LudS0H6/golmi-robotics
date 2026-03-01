@@ -5,7 +5,7 @@
 }
 
 html{
-    background-color: blueviolet;
+    background-color: rgb(44, 6, 80);
 }
 /* ENCABEZADO */
     #logo{
@@ -14,7 +14,7 @@ html{
     }
 
     h1{
-        color:rgb(3, 206, 165);
+        color:rgb(255, 239, 170) ;
         font-size: 35px;
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
@@ -103,10 +103,10 @@ html{
             line-height: 90px;
             margin: 70px;
         }
-#Navegación2{
-    margin: 30px;
-    color: rgb(3, 206, 165);
-}
+        #Navegación2{
+            margin: 30px;
+            color: rgb(3, 206, 165);
+        }
         /* Alinear iconos y texto de los botones de navegación */
             #Favoritos{
                 display: flex;
@@ -151,9 +151,11 @@ html{
             }
 /* Páginas de productos */
     .pag-productos{
-        margin: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 10%;
+        margin-left: 5%;
     }
-
     .contenido{
         display: flex;
         gap: 10%;
@@ -162,7 +164,7 @@ html{
     }
     h3{
         font-size: 20px;
-        color: whitesmoke;
+        color: rgb(255, 239, 170);
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
         font-weight: <weight>;
@@ -174,28 +176,77 @@ html{
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
-    label{
-        color: whitesmoke;
+    .rating {
+        color: rgb(255, 187, 98);
         font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
     }
-    #Comprar{
-        color: whitesmoke;
-        border-color: whitesmoke;
-        background-color: transparent;
-        border-radius: 10px;
-        font-size: 20px;
-        padding: 10px;
-        transition: 0.2s;
-    }
-    #Comprar:hover{
-        box-shadow: 0px 0px 10px rgb(240, 234, 252);
-        transform:scale(105%)
+
+    /* Acciones */
+        .acciones{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: fit-content;
+        }
+        label{
+            color: whitesmoke;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Botones */
+            #Comprar{
+                color: rgb(255, 239, 170);
+                border-color: rgb(255, 239, 170);
+                background-color: transparent;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 10px;
+                transition: 0.2s;
+                margin-top: 5%;
+            }
+    
+                #Comprar:hover{
+                    box-shadow: 0px 0px 30px rgb(255, 187, 98);
+                    transform:scale(105%)
+                }
+
+            #Carrito{
+                color: whitesmoke;
+                border-color: whitesmoke;
+                background-color: transparent;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 10px;
+                transition: 0.2s;
+                margin-top: 5%;
+            }
         
-    }
+                #Carrito:hover{
+                    box-shadow: 0px 0px 10px rgb(240, 234, 252);
+                    transform:scale(105%)
+                }
+
+            #Cantidad{
+                color: whitesmoke;
+                border-color: whitesmoke;
+                background-color: transparent;
+                border-radius: 10px;
+                font-size: 20px;
+                padding: 10px;
+            }
     .extra{
         color: whitesmoke;
         width: 250px;
+    }
+    @media (max-width: 768px) {
+        .pag-productos {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          justify-items: center;
+        }
+        .acciones{
+            grid-row: 2;
+        }
     }
 /* Pie de página */
     footer{
