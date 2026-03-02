@@ -4,13 +4,28 @@
     box-sizing: border-box;
 }
 
-html{
-    background-color: rgb(44, 6, 80);
-}
+/* Estilos universales */
+    html body{
+        min-height: 100vh;
+    }    
+    body{
+        background: linear-gradient(to bottom, #15161B, #26283a, #4b5d77);
+    }
+    header{
+        box-shadow: 0 0 30px whitesmoke;
+    }
+    #home{
+        width: 50px;
+        transition: 0.2s;
+    }
+        #home:hover{
+            filter: drop-shadow(0 0 30px rgb(240, 234, 252));
+            transform:scale(105%)
+        }
 /* ENCABEZADO */
     #logo{
-        width: 90px;
-        height: auto;
+        margin: 0 auto;
+        width: 50%
     }
 
     h1{
@@ -35,13 +50,38 @@ html{
     header{
         display: flex;
         justify-content: space-between;
-        background-color: black;
+        background-color:
+    }
+
+    main{
+        padding-top: 30px;
     }
     .links{
         color: black;
     }
     
     /* CUERPO */
+            /* Navegacion */
+            .Categorias{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                text-align: center;
+                row-gap: 10%;
+                margin-top: 3%;
+            }
+
+                .categoria img:hover{
+                    filter: drop-shadow(0 0 30px rgb(240, 234, 252));
+                    transform:scale(105%)
+                }
+
+            .categoria img{
+                width: 30%;
+                height: auto;
+                transition: 0.2s;
+            }
+    /* Productos */
         h2{
             color: whitesmoke;
             font-size: 35px;
@@ -72,9 +112,6 @@ html{
         gap: 10px;
     }
 
-    #home{
-        width: 50px;
-    }
 
     #Mi-usuario{
         display: flex;
@@ -87,8 +124,7 @@ html{
     }
 
     #NombreDeUsuario{
-        color:rgb(3, 206, 165);
-        background-color: black;
+        color:rgb(255, 239, 170);
         font-size: 35px;
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
@@ -97,58 +133,45 @@ html{
         
     }
     /* Cuerpo */
-        #Navegación1{
-            font-size: 40px;
-            list-style: none;
-            line-height: 90px;
-            margin: 70px;
+        #mi-usuario-nav{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-items: center;
+            gap: 5%;
         }
-        #Navegación2{
-            margin: 30px;
-            color: rgb(3, 206, 165);
+
+        button{
+            background: transparent;
+            border-color: whitesmoke;
+            width: 70%;
+            border-width: 3px;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            transition: 0.2s;
+            margin-top: 5%;
+            transition: 0.2s;
         }
-        /* Alinear iconos y texto de los botones de navegación */
-            #Favoritos{
+
+            button:hover{
+                box-shadow: 0px 0px 10px rgb(240, 234, 252);
+                        transform:scale(105%)
+            }
+        .imagen-texto{
                 display: flex;
                 align-items: center;
                 gap: 10px;
-            }
-            #MiCarrito{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-            #MisCupones{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-            #Historial{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-            #EditarDirección{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-            #EditarTarjetas{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-        /* Tamaño de Iconos */
-            .iconos{
-                width: 50px;
-                height: 50px;
+        }
+        .iconos{
+                width: 70px;
+                height: 70px;
                 object-fit: contain;
-            }
-            .iconos2{
-                width: 25px;
-                height: 25px;
-                object-fit: contain;
-            }
+        }
+        h4{
+            color: whitesmoke;
+        }
+            
 /* Páginas de productos */
     .pag-productos{
         display: grid;
@@ -250,10 +273,21 @@ html{
     }
 /* Pie de página */
     footer{
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     line-height: 25px;
     margin-top: 20px;
+    }
+    footer img{
+        width: 150px;
+        height: auto;
+    }
+    .redes{
+        display: flex;
+        gap: 15px;
     }
     #Contacto{
     font-size: 20px;
@@ -266,4 +300,4 @@ html{
         width: 40px;
         height: 40px;
         object-fit: contain;
-    }
+    } 
