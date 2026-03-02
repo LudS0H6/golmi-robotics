@@ -12,7 +12,7 @@
         background: linear-gradient(to bottom, #15161B, #26283a, #4b5d77);
     }
     header{
-        box-shadow: 0 0 30px whitesmoke;
+        box-shadow: 0 0 30px rgb(240, 234, 252);
     }
     #home{
         width: 50px;
@@ -22,6 +22,53 @@
             filter: drop-shadow(0 0 30px rgb(240, 234, 252));
             transform:scale(105%)
         }
+    /* Reescritura estilos Bootstrap */
+        .dropdown-menu{
+            background-color: #15161B;
+        }
+        
+    .item-de-dropdown{
+            color: rgb(240, 234, 252);
+            text-decoration: none;
+            font-size: 15px;
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            transition: 0.2s;
+            margin-top: 5%;
+            
+        }
+            .item-de-dropdown:hover{
+                background-color: transparent;
+                color:  rgb(240, 234, 252);
+                filter: drop-shadow(0 0 20px rgb(240, 234, 252));
+                transform:scale(105%)
+            }
+    .divisor{
+        border-color: rgb(240, 234, 252);
+    }
+/* Buscador */
+    #boton-buscar{
+        border-color: transparent;
+        width: fit-content;
+        transition: 0.2s;
+    }
+    #boton-buscar:hover{
+        box-shadow: none;
+        filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+        transform:scale(105%)
+    }
+    #icono-buscar{
+        width: 40px;
+        
+    }
+    .barra-busqueda{
+        background-color: transparent;
+        border-color: white;
+        color: white;
+        border-radius: 10px;
+    }
 /* ENCABEZADO */
     #logo{
         margin: 0 auto;
@@ -31,9 +78,8 @@
     h1{
         color:rgb(255, 239, 170) ;
         font-size: 35px;
-        font-family: "Orbitron", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
         font-style: normal;
     }
 
@@ -44,9 +90,13 @@
     }
 
     #Usuario{
-        width: 90px;
+        width: 50px;
+        transition: 0.2s;
     }
-
+        #Usuario:hover{
+            filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+            transform:scale(105%)
+        }
     header{
         display: flex;
         justify-content: space-between;
@@ -81,14 +131,18 @@
                 height: auto;
                 transition: 0.2s;
             }
+            div p{
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
     /* Productos */
         h2{
-            color: whitesmoke;
+            color: rgb(240, 234, 252);
             font-size: 35px;
             line-height: 100px;
-            font-family: "Orbitron", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
             font-style: normal;
         }
         .Productos{
@@ -110,27 +164,22 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+        padding-bottom: 10px;
     }
-
-
     #Mi-usuario{
         display: flex;
         align-items: center;
         gap: 10px;
     }
-
     #Usuario1{
         width: 190px;
     }
-
     #NombreDeUsuario{
         color:rgb(255, 239, 170);
         font-size: 35px;
-        font-family: "Orbitron", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
         font-style: normal;
-        
     }
     /* Cuerpo */
         #mi-usuario-nav{
@@ -140,11 +189,10 @@
             justify-items: center;
             gap: 5%;
         }
-
         button{
             background: transparent;
-            border-color: whitesmoke;
-            width: 70%;
+            border-color: rgb(240, 234, 252);
+            width: 75%;
             border-width: 3px;
             border-radius: 10px;
             font-size: 20px;
@@ -153,7 +201,6 @@
             margin-top: 5%;
             transition: 0.2s;
         }
-
             button:hover{
                 box-shadow: 0px 0px 10px rgb(240, 234, 252);
                         transform:scale(105%)
@@ -169,7 +216,10 @@
                 object-fit: contain;
         }
         h4{
-            color: whitesmoke;
+            color:rgb(240, 234, 252) ;
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
             
 /* Páginas de productos */
@@ -188,14 +238,12 @@
     h3{
         font-size: 20px;
         color: rgb(255, 239, 170);
-        font-family: "Orbitron", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
         font-style: normal;
-        
     }
     p{
-        color: whitesmoke;
+        color:rgb(240, 234, 252) ;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -212,7 +260,7 @@
             width: fit-content;
         }
         label{
-            color: whitesmoke;
+            color: rgb(240, 234, 252);
             font-size: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -223,6 +271,9 @@
                 background-color: transparent;
                 border-radius: 10px;
                 font-size: 20px;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
                 padding: 10px;
                 transition: 0.2s;
                 margin-top: 5%;
@@ -234,11 +285,14 @@
                 }
 
             #Carrito{
-                color: whitesmoke;
-                border-color: whitesmoke;
+                color: rgb(240, 234, 252);
+                border-color: rgb(240, 234, 252);
                 background-color: transparent;
                 border-radius: 10px;
                 font-size: 20px;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
                 padding: 10px;
                 transition: 0.2s;
                 margin-top: 5%;
@@ -250,15 +304,18 @@
                 }
 
             #Cantidad{
-                color: whitesmoke;
-                border-color: whitesmoke;
+                color: rgb(240, 234, 252);
+                border-color: rgb(240, 234, 252);
                 background-color: transparent;
                 border-radius: 10px;
                 font-size: 20px;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
                 padding: 10px;
             }
     .extra{
-        color: whitesmoke;
+        color: rgb(240, 234, 252);
         width: 250px;
     }
     @media (max-width: 768px) {
@@ -276,10 +333,15 @@
         display: flex;
         justify-content: flex-start;
         gap: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 25px;
-    margin-top: 20px;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 20px;
+        margin-top: 20px;
+        color: rgb(240, 234, 252, 0.8);
+        box-shadow: 0 0 30px rgb(240, 234, 252);
+        padding-top: 3%;
+        margin-top: 10%;
     }
     footer img{
         width: 150px;
@@ -290,11 +352,10 @@
         gap: 15px;
     }
     #Contacto{
-    font-size: 20px;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
+        font-size: 20px;
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     .contactos{
         width: 40px;
