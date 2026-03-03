@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Estilos universales */
+/* Estilos universales de todas las páginas */
     html body{
         min-height: 100vh;
     }    
@@ -22,8 +22,8 @@
             filter: drop-shadow(0 0 30px rgb(240, 234, 252));
             transform:scale(105%)
         }
-    /* Reescritura estilos Bootstrap */
-        .dropdown-menu{
+/* Reescritura estilos Bootstrap */
+    .dropdown-menu{
             background-color: #15161B;
         }
         
@@ -48,70 +48,66 @@
     .divisor{
         border-color: rgb(240, 234, 252);
     }
-/* Buscador */
-    #boton-buscar{
-        border-color: transparent;
-        width: fit-content;
-        transition: 0.2s;
-    }
-    #boton-buscar:hover{
-        box-shadow: none;
-        filter: drop-shadow(0 0 10px rgb(240, 234, 252));
-        transform:scale(105%)
-    }
-    #icono-buscar{
-        width: 40px;
-        
-    }
-    .barra-busqueda{
-        background-color: transparent;
-        border-color: white;
-        color: white;
-        border-radius: 10px;
-    }
-/* ENCABEZADO */
-    #logo{
-        margin: 0 auto;
-        width: 50%
-    }
-
-    h1{
-        color:rgb(255, 239, 170) ;
-        font-size: 35px;
-        font-family: "Audiowide", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
-
-    #Nombre-logo{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #Usuario{
-        width: 50px;
-        transition: 0.2s;
-    }
-        #Usuario:hover{
+    /* Buscador */
+        #boton-buscar{
+            border-color: transparent;
+            width: fit-content;
+            transition: 0.2s;
+        }
+        #boton-buscar:hover{
+            box-shadow: none;
             filter: drop-shadow(0 0 10px rgb(240, 234, 252));
             transform:scale(105%)
         }
-    header{
-        display: flex;
-        justify-content: space-between;
-        background-color:
-    }
-
-    main{
-        padding-top: 30px;
-    }
-    .links{
-        color: black;
-    }
+        #icono-buscar{
+            width: 40px;
+        }
+        .barra-busqueda{
+            background-color: transparent;
+            border-color: rgb(240, 234, 252);
+            color: rgb(240, 234, 252);
+            border-radius: 10px;
+        }
+/* INDEX */
+    /* Encabezado */
+        #logo{
+            margin: 0 auto;
+            width: 50%
+        }
+        h1{
+            color:rgb(255, 187, 98) ;
+            font-size: 35px;
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #Nombre-logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #Usuario{
+            width: 50px;
+            transition: 0.2s;
+        }
+            #Usuario:hover{
+                filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+                transform:scale(105%)
+            }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color:
+        }
+        main{
+            padding-top: 30px;
+        }
+        .links{
+            color: black;
+        }
     
     /* CUERPO */
-            /* Navegacion */
+        /* Navegacion */
             .Categorias{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -120,12 +116,10 @@
                 row-gap: 10%;
                 margin-top: 3%;
             }
-
                 .categoria img:hover{
                     filter: drop-shadow(0 0 30px rgb(240, 234, 252));
                     transform:scale(105%)
                 }
-
             .categoria img{
                 width: 30%;
                 height: auto;
@@ -136,51 +130,64 @@
                 font-weight: 400;
                 font-style: normal;
             }
-    /* Productos */
-        h2{
-            color: rgb(240, 234, 252);
-            font-size: 35px;
-            line-height: 100px;
-            font-family: "Audiowide", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+        /* Productos */
+            h2{
+                color: rgb(240, 234, 252);
+                font-size: 35px;
+                line-height: 100px;
+                font-family: "Audiowide", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+                display: flex;
+                justify-content: center;
+            } 
+            .Productos{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+            .productos-imagenes{
+                width: 190px;
+                height: 190px;
+                object-fit: contain;
+                transition: 0.2s;
+                border: 10px;
+                border-color: rgb(240, 234, 252);
+                border-radius: 10px;
+            }
+                .productos-imagenes:hover{
+                    filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+                    transform:scale(105%)
+                }
+            section a{
+                text-decoration: none;
+            }
+/* Página de Mi Usuario  */
+    /* Nombre de usuario y foto de perfil */
+        #header-2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding-bottom: 10px;
         }
-        .Productos{
+        #Mi-usuario{
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
-        .productos-imagenes{
+        #Usuario1{
             width: 190px;
-            height: 190px;
-            object-fit: contain;
         }
-
-/* Página de Mi Usuario  */
-    /* Nombre de usuario y foto de perfil */
-    #header-2{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        padding-bottom: 10px;
-    }
-    #Mi-usuario{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    #Usuario1{
-        width: 190px;
-    }
-    #NombreDeUsuario{
-        color:rgb(255, 239, 170);
-        font-size: 35px;
-        font-family: "Audiowide", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-    }
+        #NombreDeUsuario{
+            color: rgb(255, 187, 98);
+            font-size: 35px;
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     /* Cuerpo */
         #mi-usuario-nav{
             display: grid;
@@ -220,9 +227,11 @@
             font-family: "Audiowide", sans-serif;
             font-weight: 400;
             font-style: normal;
-        }
-            
+        }    
 /* Páginas de productos */
+    .producto-muestra{
+        width: 110%;
+    }
     .pag-productos{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -237,7 +246,7 @@
     }
     h3{
         font-size: 20px;
-        color: rgb(255, 239, 170);
+        color:rgb(255, 187, 98) ;
         font-family: "Audiowide", sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -251,7 +260,6 @@
         color: rgb(255, 187, 98);
         font-size: 20px;
     }
-
     /* Acciones */
         .acciones{
             display: flex;
@@ -266,8 +274,8 @@
         }
         /* Botones */
             #Comprar{
-                color: rgb(255, 239, 170);
-                border-color: rgb(255, 239, 170);
+                color: rgb(255, 187, 98);
+                border-color: rgb(255, 187, 98);
                 background-color: transparent;
                 border-radius: 10px;
                 font-size: 20px;
@@ -278,12 +286,10 @@
                 transition: 0.2s;
                 margin-top: 5%;
             }
-    
                 #Comprar:hover{
                     box-shadow: 0px 0px 30px rgb(255, 187, 98);
                     transform:scale(105%)
                 }
-
             #Carrito{
                 color: rgb(240, 234, 252);
                 border-color: rgb(240, 234, 252);
@@ -297,12 +303,10 @@
                 transition: 0.2s;
                 margin-top: 5%;
             }
-        
                 #Carrito:hover{
                     box-shadow: 0px 0px 10px rgb(240, 234, 252);
                     transform:scale(105%)
                 }
-
             #Cantidad{
                 color: rgb(240, 234, 252);
                 border-color: rgb(240, 234, 252);
@@ -314,20 +318,17 @@
                 font-style: normal;
                 padding: 10px;
             }
-    .extra{
-        color: rgb(240, 234, 252);
-        width: 250px;
-    }
-    @media (max-width: 768px) {
-        .pag-productos {
-          grid-template-columns: 1fr;
-          grid-template-rows: 1fr 1fr 1fr;
-          justify-items: center;
+     /* Media Query */
+        @media (max-width: 768px) {
+            .pag-productos {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                justify-items: center;
+            }
+            .acciones{
+                grid-row: 2;
+            }
         }
-        .acciones{
-            grid-row: 2;
-        }
-    }
 /* Pie de página */
     footer{
         display: flex;
