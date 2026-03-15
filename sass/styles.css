@@ -24,12 +24,12 @@ header #logo {
 }
 header h1 {
   color: rgb(255, 187, 98);
-  font-size: 35px;
   color: rgb(240, 234, 252);
   text-decoration: none;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 35px;
 }
 
 main {
@@ -62,12 +62,14 @@ main {
   filter: drop-shadow(0 0 10px rgb(240, 234, 252));
   transform: scale(105%);
 }
-.Categorias div p {
+
+div p {
   color: rgb(240, 234, 252);
   text-decoration: none;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 h2 {
@@ -103,15 +105,145 @@ h2 {
   filter: drop-shadow(0 0 10px rgb(240, 234, 252));
   transform: scale(105%);
 }
-.Productos a, .Productos h3, .Productos h4 {
+
+a, h3, h4 {
   text-decoration: none;
-  color: rgb(240, 234, 252);
   color: rgb(240, 234, 252);
   text-decoration: none;
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+}
+
+#header-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+#header-2 section .iconos {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header-2 section #NombreDeUsuario {
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: rgb(255, 187, 98);
+}
+#header-2 section #Mi-usuario {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#mi-usuario-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  gap: 5%;
+}
+#mi-usuario-nav button {
+  background: transparent;
+  background: transparent;
+  border-color: rgb(240, 234, 252);
+  width: 75%;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5%;
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+#mi-usuario-nav button:hover {
+  filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+  transform: scale(105%);
+}
+#mi-usuario-nav .iconos {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#mi-usuario-nav .imagen-texto {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#Carrito {
+  background: transparent;
+  border-color: rgb(240, 234, 252);
+  width: 75%;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5%;
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  transition: 0.1s;
+}
+#Carrito:hover {
+  box-shadow: 0px 0px 30px rgb(240, 234, 252);
+  transform: scale(105%);
+}
+
+#Comprar {
+  background: transparent;
+  border-color: rgb(240, 234, 252);
+  width: 75%;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5%;
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  transition: 0.1s;
+  color: rgb(255, 187, 98);
+  border-color: rgb(255, 187, 98);
+}
+#Comprar:hover {
+  box-shadow: 0px 0px 30px rgb(255, 187, 98);
+  transform: scale(105%);
+}
+
+#Cantidad {
+  background: transparent;
+  border-color: rgb(240, 234, 252);
+  width: 75%;
+  border-width: 3px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5%;
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 10px;
 }
 
 footer {
@@ -123,6 +255,7 @@ footer {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
   line-height: 20px;
   color: rgb(240, 234, 252);
   box-shadow: 0 0 30px rgb(240, 234, 252);
@@ -140,6 +273,7 @@ footer h5 {
   font-family: "Audiowide", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 footer a {
   width: 40px;

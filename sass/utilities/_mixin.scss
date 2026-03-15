@@ -1,9 +1,15 @@
-@mixin tipografia{
+@mixin tipografia($font-size){
     color: rgb(240, 234, 252);
     text-decoration: none;
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: $font-size;
+}
+
+@mixin grilla($column, $row){
+    grid-template-columns: $column;
+    grid-template-rows: $row;
 }
 
 @mixin boton{
@@ -13,19 +19,24 @@
         border-width: 3px;
         border-radius: 10px;
         padding: 10px;
-        transition: 0.2s;
         margin-top: 5%;
-        transition: 0.2s;
-        @include tipografia();
+        @include tipografia(20px);
 }
 
 @mixin hover1{
-    filter: drop-shadow(0 0 10px rgb(240, 234, 252));
-    transform:scale(105%)
+    transition: 0.2s;
+    &:hover{
+        filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+        transform:scale(105%)
+    }
 }
 
-@mixin hover2{
-
+@mixin hover2 ($color){
+    transition: 0.1s;
+    &:hover{
+        box-shadow: 0px 0px 30px $color;
+        transform:scale(105%)
+    }
 }
 
 @mixin flex{
