@@ -13,6 +13,17 @@ html body {
   min-height: 100vh;
 }
 
+#home {
+  width: 50px;
+}
+#home:hover {
+  transition: 0.2s;
+}
+#home:hover:hover {
+  filter: drop-shadow(0 0 10px rgb(240, 234, 252));
+  transform: scale(105%);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -46,6 +57,8 @@ main {
 }
 
 .Categorias {
+  grid-template-columns: repeat 3, 1fr repeat 2;
+  grid-template-rows: 1 fr;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -185,7 +198,65 @@ a, h3, h4 {
   gap: 10px;
 }
 
-#Carrito {
+.producto-muestra {
+  width: 110%;
+}
+
+.pag-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.producto-muestra {
+  width: 110%;
+}
+
+.contenido-grid {
+  text-align: justify;
+}
+.contenido-grid h1 {
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: rgb(255, 187, 98);
+}
+.contenido-grid h3 {
+  color: rgb(240, 234, 252);
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(255, 187, 98);
+}
+.contenido-grid p {
+  color: rgb(240, 234, 252);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenido-grid .rating {
+  color: rgb(255, 187, 98);
+  font-size: 20px;
+}
+
+.acciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.acciones label {
+  color: rgb(240, 234, 252);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.acciones {
+  margin-left: 10%;
+}
+.acciones #Carrito {
   background: transparent;
   border-color: rgb(240, 234, 252);
   width: 75%;
@@ -201,12 +272,11 @@ a, h3, h4 {
   font-size: 20px;
   transition: 0.1s;
 }
-#Carrito:hover {
+.acciones #Carrito:hover {
   box-shadow: 0px 0px 30px rgb(240, 234, 252);
   transform: scale(105%);
 }
-
-#Comprar {
+.acciones #Comprar {
   background: transparent;
   border-color: rgb(240, 234, 252);
   width: 75%;
@@ -224,12 +294,11 @@ a, h3, h4 {
   color: rgb(255, 187, 98);
   border-color: rgb(255, 187, 98);
 }
-#Comprar:hover {
+.acciones #Comprar:hover {
   box-shadow: 0px 0px 30px rgb(255, 187, 98);
   transform: scale(105%);
 }
-
-#Cantidad {
+.acciones #Cantidad {
   background: transparent;
   border-color: rgb(240, 234, 252);
   width: 75%;
@@ -243,7 +312,6 @@ a, h3, h4 {
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
-  padding: 10px;
 }
 
 footer {

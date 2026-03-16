@@ -7,6 +7,13 @@ html body{
     min-height: 100vh;
 }
 
+#home{
+    width: 50px;
+    &:hover{
+        @include hover1
+    }
+}
+
 //INDEX
     // Header
         header{
@@ -31,9 +38,7 @@ html body{
     }
     // Cuerpo
         .Categorias{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            @include grilla (repeat (3, 1fr) repeat (2, 1 fr));
             text-align: center;
             row-gap: 10%;
             margin-top: 3%;
@@ -123,30 +128,72 @@ html body{
       }
       
 //Página de productos
+.producto-muestra{
+    width: 110%;
+  }
+  
 .pag-productos{
-    @include grilla (repeat(3, 1fr));
-    margin-top: 10%;
-    margin-left: 5%;
-    img{
-        width: 110%;
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-      //Botones
-      #Carrito{
-            @include boton;
-            @include hover2 ($color-primario);
-        }
-        #Comprar{
-            @include boton;
-            @include hover2 ($color-secundario);
+.producto-muestra{
+    width: 110%;
+}
+    .contenido-grid{
+        text-align: justify;
+        h1{
+            @include tipografia(35px);
             color: $color-secundario;
-            border-color: $color-secundario;
         }
-      #Cantidad{
-        @include boton;
-        padding: 10px
+        h3{
+            @include tipografia(20px);
+            color: $color-secundario;
+        }
+        p{
+            @include tipografia2;
+        }
+        .rating{
+            color: $color-secundario;
+            font-size: 20px;
+        }
+        //acciones
       }
+      .acciones{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        label{
+            @include tipografia2;
+        }
+      }
+      //Botones
+      .acciones{
+        margin-left: 10%;
+            #Carrito{
+                @include boton;
+                @include hover2 ($color-primario);
+            }
+            #Comprar{
+                @include boton;
+                @include hover2 ($color-secundario);
+                color: $color-secundario;
+                border-color: $color-secundario;
+            }
+        #Cantidad{
+            @include boton;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .pag-productos {
+            @include grilla (1fr, repeat (3, 1fr));
+            justify-items: center;
+        }
+        .acciones{
+            grid-row: 2;
+        }
+    }
 // pie de página
     footer{
         display: flex;
