@@ -19,51 +19,51 @@
 
 <body>
     <header>
+        <!-- BOOTSTRAP -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"></li>
+                    
+                    <!-- Foto de usuario -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/foto-perfil.png" alt="Ir a Mi usuario" id="Usuario">
+                        </a>
+                        <!-- Dropdown -->
+                        <ul class="dropdown-menu">
+                            <li><a class="item-de-dropdown" href="./pages/mi-usuario.html"> >Mi perfil </a></li>
+                            <li><hr class="divisor"></li>
+                        <li><a class="item-de-dropdown" href="#">Historial</a></li>
+                        <li><a class="item-de-dropdown" href="#">Preguntas</a></li>
+                        <li><a class="item-de-dropdown" href="#">Opiniones</a></li>
+                        <li><hr class="divisor"></li>
+                        <li><a class="item-de-dropdown" href="#">Créditos</a></li>
+                        <li><a class="item-de-dropdown" href="#">Suscripciones</a></li>
+                        <li><a class="item-de-dropdown" href="#">Seguros</a></li>
+                        </ul>
+                    </li>
+                    <!-- Barra de busqueda -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="barra-busqueda" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                    <button id="boton-buscar" type="submit"><img src="./images/lupa.png" alt="Buscar" id="icono-buscar"></button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
         <img src="./images/logo.png" alt="Logotipo" id="logo" class="animate__animated animate__zoomIn">
+        <h1 id="eslogan">Asistencia desde mas allá del sol</h1>
     </header>
 
 <!-- Cuerpo -->
     <main>
-
-<!-- BOOTSTRAP -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"></li>
-        
-          <!-- Foto de usuario -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="./images/foto-perfil.png" alt="Ir a Mi usuario" id="Usuario">
-            </a>
-            <!-- Dropdown -->
-            <ul class="dropdown-menu">
-                <li><a class="item-de-dropdown" href="./pages/mi-usuario.html"> >Mi perfil </a></li>
-                <li><hr class="divisor"></li>
-              <li><a class="item-de-dropdown" href="#">Historial</a></li>
-              <li><a class="item-de-dropdown" href="#">Preguntas</a></li>
-              <li><a class="item-de-dropdown" href="#">Opiniones</a></li>
-              <li><hr class="divisor"></li>
-              <li><a class="item-de-dropdown" href="#">Créditos</a></li>
-              <li><a class="item-de-dropdown" href="#">Suscripciones</a></li>
-              <li><a class="item-de-dropdown" href="#">Seguros</a></li>
-            </ul>
-          </li>
-          <!-- Barra de busqueda -->
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="barra-busqueda" type="search" placeholder="Buscar" aria-label="Buscar"/>
-          <button id="boton-buscar" type="submit"><img src="./images/lupa.png" alt="Buscar" id="icono-buscar"></button>
-        </form>
-      </div>
-    </div>
-  </nav>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
   <!-- Categorias -->
 
@@ -161,10 +161,10 @@
       </div>
       
     </main>
-<!-- Pie de página -->
+    <!-- Pie de página -->
     <footer>
         <div>
-            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="Logo">
             <div class="redes">
                 <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="Logo de Instagram" class="contactos"></a>
                 <a href="https://x.com/?lang=es" target="_blank"><img src="./images/twitter.png" alt="Logo de Twitter" class="contactos"></a>
@@ -172,20 +172,20 @@
             </div>
         </div>
         <div>
-            <h5>Atención al cliente:</h5>
-                <h6>0800-555-1234</h6>
-                <h6>ejemplo@email.com</h6>
-                <h5>Asistente virtual</h5>
-                <h6>11 5555 1234</h6> 
+            <p id="Contacto">Atención al cliente:</p>
+                <p class="texto-footer-1">0800-555-1234</p>
+                <p class="texto-footer-1">ejemplo@email.com</p>
+                <p class="texto-footer-1">Asistente virtual</p>
+                <p class="texto-footer-1">11 5555 1234</p> 
         </div>
         <div>
-            <h5>Horarios de atención:</h5>
-            <h6>LU-VI de 09:00 a 20:00</h6>
-            <h6>SA de 10:00 a 15:00</h6> 
+            <p class="texto-footer-1">Horarios de atención:</p>
+            <p class="texto-footer-1">LU-VI de 09:00 a 20:00</p>
+            <p class="texto-footer-1">SA de 10:00 a 15:00</p> 
         </div>
         <div>
-            <h5>Copyright © Golmi Robotics 2026</h5>
-            <h5>Sede central: Av. Supernova 1234, Galaxia Andromeda</h5>  
+            <p class="texto-footer-1">Copyright © Golmi Robotics 2026</p>
+            <p class="texto-footer-1">Sede central: Av. Supernova 1234, Galaxia Andromeda</p>  
         </div>
     </footer>
 </body>

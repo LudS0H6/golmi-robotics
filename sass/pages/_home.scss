@@ -47,8 +47,10 @@
     // Header
         header{
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             box-shadow: $brillo-caja;
+            padding-bottom: 3%;
             #logo{
                 margin: 0 auto;
                 width: 50%
@@ -56,6 +58,12 @@
             h1{
                 color: $color-secundario;
                 @include tipografia(35px);
+            }
+            #eslogan{
+                display: flex;
+                justify-content: center;
+                @include tipografia(20px);
+                color: $color-secundario;
             }
         }
         main{
@@ -119,30 +127,27 @@
 //Página de Mi Usuario
     //header
         #header-2{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
             gap: 10px;
-            padding-bottom: 10px;
-            section{
-                #Usuario1{
-                    width: 190px;
+            padding-bottom: 5%;
+                h1{
+                    padding-left: 5%;
                 }
-                .iconos{
-                    width: 70px;
-                    height: 70px;
-                    object-fit: contain;
-                }
-                #NombreDeUsuario{
-                    @include tipografia(35px);
-                    color: $color-secundario;
-                }
-                #Mi-usuario{
+                section#Mi-usuario{
                     display: flex;
-                    align-items: center;
                     gap: 10px;
+                        #Usuario1{
+                            width: 190px;
+                        }
+                        .iconos{
+                            width: 70px;
+                            height: 70px;
+                            object-fit: contain;
+                        }
+                        #NombreDeUsuario{
+                            @include tipografia(35px);
+                            color: $color-secundario;
+                        }
                 }
-            }
         }
         //cuerpo
         #mi-usuario-nav{
@@ -251,8 +256,9 @@
     .beneficios {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 5%;
         margin-top: 5%;
+        padding: 5%;
         @media (max-width: 768px){
             flex-direction: column;
         }
@@ -262,7 +268,7 @@
         flex: 1;
         padding: 7px;
         text-align: center;
-       box-shadow: $brillo-caja;
+        box-shadow: $brillo-caja;
         border-radius: 10px;
         img{
             width: 30%;
@@ -280,11 +286,12 @@
         box-shadow: $brillo-caja;
         padding-top: 3%;
         margin-top: 10%;
+        padding-left: 3%;
             img{
                 width: 150px;
                 height: auto;
             }
-            h5{
+            .texto-footer-1{
                 font-size: 20px;
                 @include tipografia(20px);
             }
